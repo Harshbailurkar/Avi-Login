@@ -1,0 +1,105 @@
+<html>
+<head>
+
+  <title>signUp </title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="Homepage.html">Demo exam</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      </div>
+    </div>
+  </nav>
+
+
+<html>
+<head>
+	<title style="color:black ">Sign Up</title>
+	<style>
+		body {
+			background-image: url('https://picr.padmashree.org/wp-content/uploads/2014/07/university-background-06.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		input[type=text], input[type=email], input[type=password] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 300px;
+			font-size: 16px;
+			text-align: center;
+		}
+		input[type=submit] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 300px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+		h1 {
+			margin-bottom: 30px;
+			font-size: 36px;
+			color: black;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form action="https://sheetdb.io/api/v1/c1kl36senq6p4" method="post" id="sheetdb-form">
+		<br><br>
+		<h1>Sign Up</h1>
+		{{ form.hidden_tag()}} 
+
+   
+  {{ form.username.label()}}
+  {{form.username(class="form-control",placeholder="username")}}
+  {{ form.Email.label()}} 
+  {{form.Email(class="form-control",placeholder="Email" )}}
+  {{ form.password1.label()}}
+  {{form.password1(class="form-control",placeholder="Password")}}
+  {{ form.password2.label()}}
+  {{form.password2(class="form-control",placeholder=" Comfirm your Password")}}
+  {{ form.mobile.label()}}
+  {{form.mobile(class="form-control",placeholder="mobile no" )}}
+  {{ form.School.label()}}
+  {{form.School(class="form-control",placeholder="School Name" )}}
+  {{ form.submit(class="btn btn-lg btn-primary")}}
+	</form>
+
+</body>
+</html>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
